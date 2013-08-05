@@ -11,7 +11,7 @@ module Capybara
       end
 
       def wait_until_angular_ready
-        Waiter.new(Capybara.current_session).wait_until_ready
+        Poltergeist.new(Capybara.current_session).wait_until_ready
       end
 
       extend DSL
